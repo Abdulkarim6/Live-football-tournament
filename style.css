@@ -54,3 +54,62 @@ header{
       /* background-color: aqua; */
 }
  /* ---header section style end--- */
+
+/* specipic-width section style start */
+.specific-width{
+      display: flex;
+      width: 90%;
+      margin: 10px auto;
+      border-radius: 15px;
+      /* background-color: cadetblue; */
+}
+.aside-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#161616;
+    padding: 20px;
+    border-radius: 15px;
+    height: 250px;
+
+}
+.aside-nav button{
+    width: 200px;
+    padding: 15px 35px;
+    background-color:#FFFFFF;
+    color: #161616;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.aside-nav .active{
+    background-color:#DD0000;
+    color:#FFFFFF;
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px auto;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-left:12px;
+}
+.main img{
+    width: 100%;
+}
+.main .Transfer{
+    padding: 5px 15px;
+}
+.main button,
+.main h3,
+.main div{
+    margin-top: 15px;
+}
+.main div{
+    display: flex;
+    justify-content: space-between;
+}
+.main i{
+    margin-right: 10px;
+}
