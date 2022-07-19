@@ -4,6 +4,9 @@
     margin: 0px;
     padding: 0px;
 }
+section{
+    margin-bottom: 60px;
+}
 
 
 
@@ -13,7 +16,7 @@
 header{
     display: flex;
     width: 90%;
-    margin: 10px auto;
+    margin: 10px auto 60px;
     background-color: #161616;
     border-radius: 15px;
 }
@@ -89,11 +92,18 @@ header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0px auto;
+    row-gap: 20px;
 }
 .main{
+    margin-left:12px;
+    border: 2px solid #E8E8E8;
+    border-radius: 10px; 
+    box-sizing: border-box;
+}
+.main-info{
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    margin-left:12px;
 }
 .main img{
     width: 100%;
@@ -101,7 +111,9 @@ header{
 .main .Transfer{
     padding: 5px 15px;
 }
-.main button,
+.main button{
+    margin-top: 5px;
+}
 .main h3,
 .main div{
     margin-top: 15px;
@@ -112,4 +124,39 @@ header{
 }
 .main i{
     margin-right: 10px;
+}
+/* specipic-width section style end */
+
+/* footer section style start */
+footer{
+    background-color: #161616;
+
+}
+
+.footer-title{
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+footer hr{
+    color: #FFFFFF1A;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 50px auto;
+
+}
+.footer-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.footer-info p{
+    color: #B9B9B9;
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 40px;
+
 }
