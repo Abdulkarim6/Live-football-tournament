@@ -12,8 +12,8 @@ section{
 header{
     display: flex;
     width: 90%;
-    margin: 10px auto 60px;
     background-color: #161616;
+    margin: 10px auto 60px;
     border-radius: 15px;
 }
 #header-debug{
@@ -133,7 +133,7 @@ footer{
 }
 footer hr{
     color: #FFFFFF1A;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     margin: 50px auto;
 
 }
@@ -216,9 +216,6 @@ footer hr{
 
 /* ---responsive tablet view start--- */
 @media only screen and (min-width:689px) and (max-width:992px) {
-           header{
-            background-color: chartreuse;
-           }
        /* ---header responsive start--- */
     header{
         flex-direction:column;
@@ -246,15 +243,17 @@ footer hr{
     flex-direction: column;
     width: 100%;
     }
+    .aside-nav button{
+        width: 170px;
+    }
     .aside-nav{
         height: 200px;
-        width: 60%;
+        width: 78%;
         margin: 0px auto 15px;
-
         display: flex;
         flex-direction:row;
         align-items: center;
-        background-color: n;
+        justify-content: center;
     }
     .main-grid{
         display: grid;
@@ -264,7 +263,7 @@ footer hr{
         width: 80%;
         margin: 0px auto;   
     }
-    #tablet-none{
+    #tab-screen-none{
         display: none;
     }
     
