@@ -1,4 +1,4 @@
-
+ /* ---common style--- */
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
@@ -7,10 +7,6 @@
 section{
     margin-bottom: 60px;
 }
-
-
-
-
 
   /* ---header section style start--- */
 header{
@@ -49,16 +45,17 @@ header{
       margin-left: 15px;
 }
 .header-img{
-      margin-top: 32px;
+      margin-top: 35px;
       width: 100%;
-      background-image: url(assets/Banner\ Image.png);
+      margin-bottom: 0px;
+      /* background-image: url(assets/Banner\ Image.png);
       background-position: center;
-      background-repeat: no-repeat;
-      /* background-color: aqua; */
+      background-repeat: no-repeat; */
+       background-color: aqua; 
 }
  /* ---header section style end--- */
 
-/* specipic-width section style start */
+/* ---specipic-width section style start--- */
 .specific-width{
       display: flex;
       width: 90%;
@@ -78,7 +75,7 @@ header{
 }
 .aside-nav button{
     width: 200px;
-    padding: 15px 35px;
+    padding: 15px 25px;
     background-color:#FFFFFF;
     color: #161616;
     margin-top: 15px;
@@ -125,21 +122,19 @@ header{
 .main i{
     margin-right: 10px;
 }
-/* specipic-width section style end */
+/* ---specipic-width section style end--- */
 
-/* footer section style start */
+/* ---footer section style start--- */
 footer{
     background-color: #161616;
-
 }
-
 .footer-title{
     font-size: 22px;
     font-weight: 700;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 footer hr{
     color: #FFFFFF1A;
@@ -147,16 +142,70 @@ footer hr{
     margin: 50px auto;
 
 }
-.footer-info{
+.footer-info,
+.social-site{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
 }
-.footer-info p{
+.footer-info p,
+.social-site i{
     color: #B9B9B9;
     font-size: 13px;
     font-weight: 400;
     margin-right: 40px;
+}
+#icon-size i{
+    font-size: 25px;
+}
+/* ---footer section style end--- */
+/* ---Responsive style start--- */
 
+/* ---responsive mobile view--- */
+@media only screen and (max-width:688px) {
+    /* header responsive start */
+    header{
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+
+    }
+    #header-debug{
+        width: 100%;
+    }
+    .header-info{
+        padding: 0px;
+    }
+    
+    .header-info h1{
+        font-size: 30px;
+        
+    }
+   /* header responsive end */
+    
+   /* specific-width responsive start */
+   .specific-width{
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto;
+    }
+    .aside-nav{
+        height: 200px;
+    }
+    .main-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px auto;
+        row-gap: 20px;
+        
+    }
+
+
+
+
+    .footer-details{
+        display: none;
+    }
 }
