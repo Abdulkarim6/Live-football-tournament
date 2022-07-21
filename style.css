@@ -31,15 +31,50 @@ header{
     font-weight: 400;
     color: #FFFFFF;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header-info button{
+     width: 200px;
+     height: 50px;
      font-size: 20px;
      font-weight: 400;
      color: #FFFFFF;
      padding: 7px 15px;
-     margin-top: 10px;
+     margin-top: 20px;
      background-color: #DD0000;
      border-radius: 5px;
+     position: relative;
+     animation: active 5s linear infinite;
 }
+@keyframes active{
+    0% {background-color:#DD0000;}
+    50% {background-color:#1132ea;}
+    100% {background-color:#14e614;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header-info .fa-solid{
       margin-left: 15px;
 }
