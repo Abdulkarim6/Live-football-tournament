@@ -31,19 +31,6 @@ header{
     font-weight: 400;
     color: #FFFFFF;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header-info button{
      width: 200px;
      height: 50px;
@@ -62,18 +49,6 @@ header{
     50% {background-color:#1132ea;}
     100% {background-color:#14e614;}
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .header-info .fa-solid{
       margin-left: 15px;
